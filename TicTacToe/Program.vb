@@ -1,6 +1,7 @@
-﻿Module Module1
+﻿Module Program
 
     Sub Main()
 
     End Sub
+
 End Module
