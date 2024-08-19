@@ -7,6 +7,7 @@
 
     Public Property CharOne As Char = "x"
     Public Property CharTwo As Char = "o"
+    Public Property CharBoard As Char = "*"
     Public Property BoardSize As TicTacToe.BoardSizes = BoardSizes.Small
 
     Public Sub QuestionCharOne()
@@ -17,6 +18,11 @@
     Public Sub QuestionCharTwo()
         System.Console.Write("Enter the two character for example, 'o' : ")
         TicTacToe.Options.CharTwo = System.Console.ReadLine().Trim()
+    End Sub
+
+    Public Sub QuestionCharBoard()
+        System.Console.Write("Enter the page character, '*' : ")
+        TicTacToe.Options.CharBoard = System.Console.ReadLine().Trim()
     End Sub
 
     Public Sub QuestionBoardSize()
