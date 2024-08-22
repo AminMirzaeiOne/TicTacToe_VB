@@ -3,6 +3,12 @@
     Public XO = {" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "}
 
     Sub Main()
+        Play()
+        Console.ReadKey()
+
+    End Sub
+
+    Sub Play()
         Dim board As TicTacToe.Board = New TicTacToe.Board()
         Dim player = 1
         Dim temp = 0
@@ -67,10 +73,18 @@
             Console.WriteLine("The game ended without a winner")
         End If
 
+    End Sub
 
+    Sub Info()
+        ' Display a separator line with Magenta foreground color
+        System.Console.ForegroundColor = ConsoleColor.Magenta
+        System.Console.WriteLine("-----------------------")
 
-        Console.ReadKey()
+        ' Set the foreground color to Red for programmer information
+        System.Console.ForegroundColor = ConsoleColor.Red
 
+        ' Display programmer information
+        System.Console.WriteLine("Programmer : Amin Mirzaei - Github(UserName) : AminMirzaeiOne")
     End Sub
 
     Private Function check() As Integer
