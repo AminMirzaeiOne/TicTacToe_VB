@@ -1,7 +1,7 @@
 ﻿Module Program
 
     Public XO = {" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "}
-
+    Private color As System.ConsoleColor = ConsoleColor.White
     Sub Main()
         System.Console.Write("Enter your item is menu (play or info or theme) : ")
         Dim x As String = Console.ReadLine().ToLower().Trim()
@@ -45,7 +45,8 @@
                     System.Console.ForegroundColor = TicTacToe.Themes.PlayerOneColor
                     Console.WriteLine(" Turn Player X " & vbLf)
                 End If
-                System.Console.ForegroundColor = TicTacToe.Themes.ForeColor
+                System.Console.ForegroundColor = color
+
 
                 Console.Write(" Enter Row No.: ")
                 Dim r As Integer = Convert.ToInt32(Console.ReadLine())
@@ -106,9 +107,11 @@
 
     Sub ThemeSettings()
         TicTacToe.Themes.QuestionTheme()
+        color = TicTacToe.Themes.ForeColor
         TicTacToe.Themes.QuestionBoardColor()
         TicTacToe.Themes.QuestionPlayerOneColor()
         TicTacToe.Themes.QuestionPlayerTwoColor()
+
     End Sub
 
     Private Function check() As Integer

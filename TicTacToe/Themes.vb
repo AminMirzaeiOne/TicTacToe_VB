@@ -14,12 +14,16 @@ ThemeQuestion:
         theme = themeQ
         Select Case themeQ
             Case "light"
+                BackColor = ConsoleColor.White
                 System.Console.BackgroundColor = ConsoleColor.White
                 System.Console.Clear()
+                ForeColor = ConsoleColor.Black
                 System.Console.ForegroundColor = ConsoleColor.Black
             Case "dark"
+                BackColor = ConsoleColor.Black
                 System.Console.BackgroundColor = ConsoleColor.Black
                 System.Console.Clear()
+                ForeColor = ConsoleColor.White
                 System.Console.ForegroundColor = ConsoleColor.White
             Case Else
                 System.Console.ForegroundColor = ConsoleColor.Red
