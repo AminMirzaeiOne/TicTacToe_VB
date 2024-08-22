@@ -1,7 +1,7 @@
 ﻿Public Class Board
     Public Sub Draw()
         Console.WriteLine()
-        Console.ForegroundColor = ConsoleColor.Cyan
+        Console.ForegroundColor = Themes.BoardColor
         Console.WriteLine("                ")
         Console.WriteLine("   ╔═══╦═══╦═══╗")
         Console.WriteLine("   ║{0}║{1}║{2}║", TicTacToe.Program.XO(0), TicTacToe.Program.XO(1), TicTacToe.Program.XO(2))
