@@ -54,9 +54,9 @@ BoardQuestion:
                 System.Console.ForegroundColor = ConsoleColor.Red
                 System.Console.WriteLine("The color entered is invalid")
                 If (theme = "light") Then
-                    System.Console.ForegroundColor = ConsoleColor.Black
-                Else
-                    System.Console.ForegroundColor = ConsoleColor.White
+                    TicTacToe.Themes.ForeColor = ConsoleColor.Black
+                ElseIf (theme = "dark") Then
+                    TicTacToe.Themes.ForeColor = ConsoleColor.White
                 End If
                 System.Console.ReadKey()
                 GoTo BoardQuestion
@@ -87,9 +87,9 @@ PlayerOneQuestion:
                 System.Console.ForegroundColor = ConsoleColor.Red
                 System.Console.WriteLine("The color entered is invalid")
                 If (theme = "light") Then
-                    System.Console.ForegroundColor = ConsoleColor.Black
-                Else
-                    System.Console.ForegroundColor = ConsoleColor.White
+                    TicTacToe.Themes.ForeColor = ConsoleColor.Black
+                ElseIf (theme = "dark") Then
+                    TicTacToe.Themes.ForeColor = ConsoleColor.White
                 End If
                 System.Console.ReadKey()
                 GoTo PlayerOneQuestion
@@ -120,9 +120,9 @@ PlayerTwoQuestion:
                 System.Console.ForegroundColor = ConsoleColor.Red
                 System.Console.WriteLine("The color entered is invalid")
                 If (theme = "light") Then
-                    System.Console.ForegroundColor = ConsoleColor.Black
+                    TicTacToe.Themes.ForeColor = ConsoleColor.Black
                 Else
-                    System.Console.ForegroundColor = ConsoleColor.White
+                    TicTacToe.Themes.ForeColor = ConsoleColor.White
                 End If
                 System.Console.ReadKey()
                 GoTo PlayerTwoQuestion
