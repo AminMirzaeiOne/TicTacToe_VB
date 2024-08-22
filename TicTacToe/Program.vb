@@ -3,12 +3,15 @@
     Public XO = {" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "}
 
     Sub Main()
-        System.Console.Write("Enter your item is menu (play or info) : ")
+        System.Console.Write("Enter your item is menu (play or info or theme) : ")
         Dim x As String = Console.ReadLine().ToLower().Trim()
         If x = "play" Then
             Play()
         ElseIf x = "info" Then
-            Info
+            Info()
+        ElseIf x = "theme" Then
+            ThemeSettings()
+            Play()
         Else
             System.Console.WriteLine("Error")
         End If
@@ -25,18 +28,24 @@
         For i = 0 To 8
 
             Console.Clear()
-            Console.ForegroundColor = ConsoleColor.Green
-            Console.WriteLine(" Player1:X and Player2:O")
-            Console.ForegroundColor = ConsoleColor.Gray
+            Console.ForegroundColor = TicTacToe.Themes.PlayerOneColor
+            Console.Write(" Player1 : X")
+            System.Console.ForegroundColor = TicTacToe.Themes.ForeColor
+            System.Console.Write(" - ")
+            System.Console.ForegroundColor = TicTacToe.Themes.PlayerTwoColor
+            System.Console.WriteLine("Player2 : O")
             board.Draw()
 
             If temp <> 1 Then
 
                 If player Mod 2 = 0 Then
+                    System.Console.ForegroundColor = TicTacToe.Themes.PlayerTwoColor
                     Console.WriteLine(" Turn Player O " & vbLf)
                 Else
+                    System.Console.ForegroundColor = TicTacToe.Themes.PlayerOneColor
                     Console.WriteLine(" Turn Player X " & vbLf)
                 End If
+                System.Console.ForegroundColor = TicTacToe.Themes.ForeColor
 
                 Console.Write(" Enter Row No.: ")
                 Dim r As Integer = Convert.ToInt32(Console.ReadLine())
@@ -93,6 +102,13 @@
 
         ' Display programmer information
         System.Console.WriteLine("Programmer : Amin Mirzaei - Github(UserName) : AminMirzaeiOne")
+    End Sub
+
+    Sub ThemeSettings()
+        TicTacToe.Themes.QuestionTheme()
+        TicTacToe.Themes.QuestionBoardColor()
+        TicTacToe.Themes.QuestionPlayerOneColor()
+        TicTacToe.Themes.QuestionPlayerTwoColor()
     End Sub
 
     Private Function check() As Integer
