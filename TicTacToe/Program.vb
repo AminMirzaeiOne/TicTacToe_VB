@@ -3,7 +3,9 @@
     Public XO = {" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "}
     Private color As System.ConsoleColor = ConsoleColor.White
     Sub Main()
+        System.Console.ForegroundColor = ConsoleColor.Cyan
         System.Console.Write("Enter your item is menu (play or info or theme) : ")
+        System.Console.ForegroundColor = ConsoleColor.Yellow
         Dim x As String = Console.ReadLine().ToLower().Trim()
         If x = "play" Then
             Play()
@@ -87,8 +89,10 @@
         If temp = 1 Then
             Console.ForegroundColor = ConsoleColor.Magenta
             Console.WriteLine(" Player {0} has won", player Mod 2 + 1)
+            Info()
         Else
             Console.WriteLine("The game ended without a winner")
+            Info()
         End If
 
     End Sub
