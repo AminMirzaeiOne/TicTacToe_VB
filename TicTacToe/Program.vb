@@ -3,7 +3,15 @@
     Public XO = {" 1 ", " 2 ", " 3 ", " 4 ", " 5 ", " 6 ", " 7 ", " 8 ", " 9 "}
 
     Sub Main()
-        Play()
+        System.Console.Write("Enter your item is menu (play or info) : ")
+        Dim x As String = Console.ReadLine().ToLower().Trim()
+        If x = "play" Then
+            Play()
+        ElseIf x = "info" Then
+            Info
+        Else
+            System.Console.WriteLine("Error")
+        End If
         Console.ReadKey()
 
     End Sub
