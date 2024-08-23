@@ -28,5 +28,8 @@ Tic Tac Toe game made for Windows console platform <br />
 5 - And for player 2: o, repeat the same as for player 1: x
 
 <h2>📷 Screenshots</h2>
-<img width="674" alt="Capture16" src="https://github.com/user-attachments/assets/60d526fb-2d8b-4a82-862c-b84dee0882f5">
-<img width="676" alt="Capture17" src="https://github.com/user-attachments/assets/e6797840-bd73-4fb2-949c-ad16a434b76e">
+<img width="675" alt="Capture23" src="https://github.com/user-attachments/assets/c152bd35-2816-48c1-a70d-6f719becc546">
+<img width="674" alt="Capture24" src="https://github.com/user-attachments/assets/67a88aef-8ade-4412-9fa7-b13348d2642d">
+<img width="673" alt="Capture25" src="https://github.com/user-attachments/assets/2728d8b2-e2b9-4a58-bc16-11116d0e8273">
+<img width="677" alt="Capture26" src="https://github.com/user-attachments/assets/960cdd61-cb01-41c9-968e-d8e63bbf5a3b">
+<img width="675" alt="Capture27" src="https://github.com/user-attachments/assets/bfc2a5ba-ad67-4777-8c22-14ac48251006">
