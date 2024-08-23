@@ -7,6 +7,7 @@
         System.Console.Write("Enter your item is menu (play or info or theme) : ")
         System.Console.ForegroundColor = ConsoleColor.Yellow
         Dim x As String = Console.ReadLine().ToLower().Trim()
+        System.Console.ResetColor()
         If x = "play" Then
             Play()
         ElseIf x = "info" Then
